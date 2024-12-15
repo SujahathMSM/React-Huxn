@@ -1,30 +1,59 @@
-import Card from "./Components/Card";
-import './App.css'
+import "./App.css";
+import { AiFillCode } from "react-icons/ai";
+import Profile from "./components/Usestatecomps/Profile";
+import TodoLits from "./components/Usestatecomps/TodoLits";
 const App = () => {
+  const handleCopy = () => {
+    console.log("THis paragraph is copied");
+  };
   return (
     <div className="container">
-      <h1>Hello React HuXn - Sujahath</h1>
-      <Card>
-        <h2>Hello Card - 01</h2>
+      <h1>
+        {" "}
+        <AiFillCode style={{ fontSize: 50, color: "gold" }} />
+        Hello React HuXn - Sujahath
+      </h1>
+      <p onCopy={handleCopy}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        repellendus natus. Voluptas nesciunt est debitis culpa qui, non rem
+        dignissimos, facere aspernatur architecto fugiat sequi inventore
+        recusandae at veritatis ut ipsa iusto nulla atque pariatur.
+      </p>
+      {/* <Card>
+        <h2>
+          <AiFillCode style={{fontSize: 30, color: 'gold'}}/>
+          Hello Card - 01
+        </h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
           nostrum.
         </p>
       </Card>
       <Card>
-        <h2>Hello Card - 02</h2>
+        <h2>
+          <AiFillCode />
+          Hello Card - 02
+        </h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
           nostrum.
         </p>
       </Card>
       <Card>
-        <h2>Hello Card - 03</h2>
+        <h2>
+          <AiFillCode />
+          Hello Card - 03
+        </h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
           nostrum.
         </p>
-      </Card>
+      </Card> */}
+      {/* <UseStatePrac />
+      <UpdateRate /> */}
+      {/* <ExampleLast /> */}
+      <TodoLits />
+      <Profile />
     </div>
   );
 };
