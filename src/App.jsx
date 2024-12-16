@@ -1,7 +1,6 @@
 import "./App.css";
 import { AiFillCode } from "react-icons/ai";
-import Profile from "./components/Usestatecomps/Profile";
-import TodoLits from "./components/Usestatecomps/TodoLits";
+import ShoppingList from "./components/Usestatecomps/ShoppingList";
 const App = () => {
   const handleCopy = () => {
     console.log("THis paragraph is copied");
@@ -52,8 +51,9 @@ const App = () => {
       {/* <UseStatePrac />
       <UpdateRate /> */}
       {/* <ExampleLast /> */}
-      <TodoLits />
-      <Profile />
+      {/* <TodoLits />
+      <Profile /> */}
+      <ShoppingList />
     </div>
   );
 };
