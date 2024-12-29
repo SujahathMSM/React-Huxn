@@ -1,6 +1,5 @@
 import "./App.css";
 import { AiFillCode } from "react-icons/ai";
-import CopyInput from "./components/Usestatecomps/CopyInput";
 import Switcher from "./components/Usestatecomps/Switcher";
 const App = () => {
   const handleCopy = () => {
