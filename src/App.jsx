@@ -1,6 +1,7 @@
 import "./App.css";
 import { AiFillCode } from "react-icons/ai";
-import ShoppingList from "./components/Usestatecomps/ShoppingList";
+import CopyInput from "./components/Usestatecomps/CopyInput";
+import Switcher from "./components/Usestatecomps/Switcher";
 const App = () => {
   const handleCopy = () => {
     console.log("THis paragraph is copied");
@@ -53,7 +54,9 @@ const App = () => {
       {/* <ExampleLast /> */}
       {/* <TodoLits />
       <Profile /> */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      {/* <CopyInput /> */}
+      <Switcher />
     </div>
   );
 };
