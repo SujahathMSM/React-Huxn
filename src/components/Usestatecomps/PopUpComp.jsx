@@ -10,7 +10,7 @@ const PopUpComp = ({ copied }) => {
         </div>
       )}
     </section>, 
-    document.querySelector("#pop-up") as Element
+    document.querySelector("#pop-up")
   );
 };
 
