@@ -1,10 +1,24 @@
 import "./App.css";
 import { AiFillCode } from "react-icons/ai";
-import Switcher from "./components/Usestatecomps/Switcher";
+import { useState, useEffect } from "react";
+import Datafetch from "./components/Useefectcomps/Datafetch";
 const App = () => {
   const handleCopy = () => {
     console.log("THis paragraph is copied");
   };
+
+  const [value, setValue] = useState(0);
+  const [name, setName] = useState("");
+
+  const handleNameChange = (e) => {
+    e.preventDefault();
+    setName(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log("Use effect is called");
+    document.title = `Incremented ${value}`;
+  }, [value]);
   return (
     <div className="container">
       <h1>
@@ -18,6 +32,11 @@ const App = () => {
         dignissimos, facere aspernatur architecto fugiat sequi inventore
         recusandae at veritatis ut ipsa iusto nulla atque pariatur.
       </p>
+      <h1>Check useEffect: {value}</h1>
+      <button onClick={() => setValue(value + 1)}>Click Me</button>
+
+      <h2>Name: {name}</h2>
+      <input type="text" value={name} onChange={handleNameChange} />
       {/* <Card>
         <h2>
           <AiFillCode style={{fontSize: 30, color: 'gold'}}/>
@@ -55,7 +74,8 @@ const App = () => {
       <Profile /> */}
       {/* <ShoppingList /> */}
       {/* <CopyInput /> */}
-      <Switcher />
+      {/* <Switcher /> */}
+      <Datafetch/>
     </div>
   );
 };
